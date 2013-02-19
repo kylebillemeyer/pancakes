@@ -1,0 +1,11 @@
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Pancakes.Engine.Rendering.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Pancakes.Engine.Rendering.pdb
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\obj\x86\Debug\Pancakes.Engine.Rendering.csprojResolveAssemblyReference.cache
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\obj\x86\Debug\Pancakes.Engine.Rendering.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\obj\x86\Debug\Pancakes.Engine.Rendering.pdb
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Pancakes.Engine.Core.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Pancakes.Engine.Core.pdb
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Autofac.Configuration.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Autofac.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Rendering\bin\x86\Debug\Autofac.xml

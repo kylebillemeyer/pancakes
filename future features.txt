@@ -1,0 +1,9 @@
+input
+	game pad support
+	combos based on frames
+	
+rendering
+	FPS animations
+	UI toolkit
+	Culling
+	Text rendering

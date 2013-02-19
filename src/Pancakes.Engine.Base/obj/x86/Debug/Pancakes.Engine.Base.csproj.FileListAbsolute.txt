@@ -1,0 +1,6 @@
+C:\Code\git\pancakes\src\Pancakes.Engine.Base\bin\x86\Debug\Pancakes.Engine.Base.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Base\bin\x86\Debug\Pancakes.Engine.Base.pdb
+C:\Code\git\pancakes\src\Pancakes.Engine.Base\obj\x86\Debug\Pancakes.Engine.Base.csprojResolveAssemblyReference.cache
+C:\Code\git\pancakes\src\Pancakes.Engine.Base\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Code\git\pancakes\src\Pancakes.Engine.Base\obj\x86\Debug\Pancakes.Engine.Base.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Base\obj\x86\Debug\Pancakes.Engine.Base.pdb

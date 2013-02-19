@@ -1,0 +1,13 @@
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Pancakes.Engine.Physics.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Pancakes.Engine.Physics.pdb
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Autofac.Configuration.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Autofac.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\DebugViewXNA.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\FarseerPhysicsXNAWP7.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Autofac.xml
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\obj\x86\Debug\Pancakes.Engine.Physics.csprojResolveAssemblyReference.cache
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\obj\x86\Debug\Pancakes.Engine.Physics.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\obj\x86\Debug\Pancakes.Engine.Physics.pdb
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Pancakes.Engine.Core.dll
+C:\Code\git\pancakes\src\Pancakes.Engine.Physics\bin\x86\Debug\Pancakes.Engine.Core.pdb
