@@ -1,9 +1,0 @@
-C:\Code\git\pancakes\Pancakes.Engine.Core\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Code\git\pancakes\Pancakes.Engine.Core\bin\x86\Debug\Pancakes.Engine.Core.dll
-C:\Code\git\pancakes\Pancakes.Engine.Core\bin\x86\Debug\Pancakes.Engine.Core.pdb
-C:\Code\git\pancakes\Pancakes.Engine.Core\obj\x86\Debug\Pancakes.Engine.Core.dll
-C:\Code\git\pancakes\Pancakes.Engine.Core\obj\x86\Debug\Pancakes.Engine.Core.pdb
-C:\Code\git\pancakes\Pancakes.Engine.Core\obj\x86\Debug\Pancakes.Engine.Core.csprojResolveAssemblyReference.cache
-C:\Code\git\pancakes\Pancakes.Engine.Core\bin\x86\Debug\Autofac.Configuration.dll
-C:\Code\git\pancakes\Pancakes.Engine.Core\bin\x86\Debug\Autofac.dll
-C:\Code\git\pancakes\Pancakes.Engine.Core\bin\x86\Debug\Autofac.xml
