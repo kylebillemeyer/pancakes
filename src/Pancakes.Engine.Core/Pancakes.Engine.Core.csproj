@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{25535DC1-170E-4143-8DD7-F2B62104DE73}</ProjectGuid>
+    <ProjectGuid>{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}</ProjectGuid>
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pancakes.Engine.Physics</RootNamespace>
-    <AssemblyName>Pancakes.Engine.Physics</AssemblyName>
+    <RootNamespace>Pancakes.Engine</RootNamespace>
+    <AssemblyName>Pancakes.Engine.Core</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaProfile>Reach</XnaProfile>
-    <XnaCrossPlatformGroupID>6b1e2063-6031-4296-9d2b-f2e1617c21dd</XnaCrossPlatformGroupID>
+    <XnaCrossPlatformGroupID>2b981ca9-f14c-4678-bf9f-7470a42b3270</XnaCrossPlatformGroupID>
     <XnaOutputType>Library</XnaOutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -49,12 +49,6 @@
     <Reference Include="Autofac.Configuration">
       <HintPath>..\..\packages\Autofac.3.0.1\lib\net40\Autofac.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="DebugViewXNA">
-      <HintPath>..\..\lib\DebugViewXNA.dll</HintPath>
-    </Reference>
-    <Reference Include="FarseerPhysicsXNAWP7">
-      <HintPath>..\..\packages\FarseerPhysicsXNAWP7.3.3.1.37294\lib\net40-Client\FarseerPhysicsXNAWP7.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
@@ -71,21 +65,24 @@
     <Reference Include="System.Net" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CollisionUtilities.cs" />
-    <Compile Include="IPhysicsEnabledBody.cs" />
-    <Compile Include="PhysicsConstants.cs" />
-    <Compile Include="PhysicsManager.cs" />
+    <Compile Include="Caching\ContentManagerProvider.cs" />
+    <Compile Include="Caching\InMemoryResourceCache.cs" />
+    <Compile Include="Caching\IResourceCache.cs" />
+    <Compile Include="Caching\IResourceProvider.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Configuration\IStartUp.cs" />
+    <Compile Include="Entity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extensibility\IEngineComponent.cs" />
+    <Compile Include="Extensibility\IEngineManager.cs" />
+    <Compile Include="IRegisterManager.cs" />
+    <Compile Include="PancakesGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterPhysicsModule.cs" />
+    <Compile Include="Utilities\DotNetExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj">
-      <Project>{dee426eb-8e97-40f3-9d5a-9bc3f573761d}</Project>
-      <Name>Pancakes.Engine.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

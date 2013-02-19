@@ -97,7 +97,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj">
+    <ProjectReference Include="..\..\src\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj">
       <Project>{dee426eb-8e97-40f3-9d5a-9bc3f573761d}</Project>
       <Name>Pancakes.Engine.Core</Name>
     </ProjectReference>

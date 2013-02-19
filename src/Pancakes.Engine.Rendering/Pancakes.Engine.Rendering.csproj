@@ -78,13 +78,13 @@
     <Compile Include="RenderManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj">
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj">
       <Project>{dee426eb-8e97-40f3-9d5a-9bc3f573761d}</Project>
       <Name>Pancakes.Engine.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
