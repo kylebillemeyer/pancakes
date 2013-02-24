@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Input", "sr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Rendering", "src\Pancakes.Engine.Rendering\Pancakes.Engine.Rendering.csproj", "{D42030D3-F5BA-4790-AD76-08CBC80EC64F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrneryBirdz", "OrneryBirdz\OrneryBirdz\OrneryBirdz.csproj", "{9DE7E761-19CA-4188-84D6-2393264296C2}"
-EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "OrneryBirdzContent", "OrneryBirdz\OrneryBirdzContent\OrneryBirdzContent.contentproj", "{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Core", "src\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj", "{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balloons", "Balloons\OrneryBirdz\Balloons.csproj", "{9DE7E761-19CA-4188-84D6-2393264296C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalloonsContent", "Balloons\OrneryBirdzContent\BalloonsContent.contentproj", "{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +73,16 @@ Global
 		{D42030D3-F5BA-4790-AD76-08CBC80EC64F}.Release|x86.Build.0 = Release|x86
 		{D42030D3-F5BA-4790-AD76-08CBC80EC64F}.Release|Xbox 360.ActiveCfg = Release|x86
 		{D42030D3-F5BA-4790-AD76-08CBC80EC64F}.Release|Xbox 360.Build.0 = Release|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|x86.ActiveCfg = Debug|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|x86.Build.0 = Debug|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|x86.ActiveCfg = Release|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|x86.Build.0 = Release|x86
+		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|Xbox 360.ActiveCfg = Release|x86
 		{9DE7E761-19CA-4188-84D6-2393264296C2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{9DE7E761-19CA-4188-84D6-2393264296C2}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{9DE7E761-19CA-4188-84D6-2393264296C2}.Debug|x86.ActiveCfg = Debug|x86
@@ -89,16 +99,6 @@ Global
 		{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}.Release|x86.ActiveCfg = Release|x86
 		{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}.Release|Xbox 360.ActiveCfg = Release|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|x86.ActiveCfg = Debug|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|x86.Build.0 = Debug|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Debug|Xbox 360.ActiveCfg = Debug|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|Mixed Platforms.Build.0 = Release|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|x86.ActiveCfg = Release|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|x86.Build.0 = Release|x86
-		{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}.Release|Xbox 360.ActiveCfg = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

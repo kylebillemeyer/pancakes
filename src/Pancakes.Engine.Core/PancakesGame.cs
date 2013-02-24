@@ -38,7 +38,7 @@ namespace Pancakes.Engine
             camera = new Camera(Vector2.One, Vector3.Zero);
             builder.RegisterInstance(camera).AsSelf().SingleInstance();
 
-            RegisterManagers(builder);
+            RegisterEngineParts(builder);
 
             container = builder.Build();
 
@@ -78,26 +78,42 @@ namespace Pancakes.Engine
             OnDraw(gameTime, spriteBatch);
         }
 
-        protected abstract void Init(IContainer container);
+        protected virtual void Init(IContainer container) 
+        { 
+        }
 
-        protected abstract void LoadCustomContent(IContainer container);
+        protected virtual void LoadCustomContent(IContainer container) 
+        { 
+        }
 
-        protected abstract void OnUpdate(GameTime gameTime);
+        protected virtual void OnUpdate(GameTime gameTime)
+        {
+        }
 
-        protected abstract void OnDraw(GameTime gameTime, SpriteBatch spriteBatch);
+        protected virtual void OnDraw(GameTime gameTime, SpriteBatch spriteBatch)
+        {
+        }
 
-        private void RegisterManagers(ContainerBuilder builder)
+        private void RegisterEngineParts(ContainerBuilder builder)
         {
             var executingAssembly = Assembly.GetExecutingAssembly();
-            builder.RegisterAssemblyModules(executingAssembly);
+            RegisterAssembly(builder, executingAssembly);
 
             var loadedAssemblies = executingAssembly.GetReferencedAssemblies();
             loadedAssemblies.ForEach(x =>
                 {
                     var assembly = Assembly.Load(x);
-                    builder.RegisterAssemblyModules(assembly);
+                    RegisterAssembly(builder, assembly);
                 });
+        }
 
+        private void RegisterAssembly(ContainerBuilder builder, Assembly assembly)
+        {
+            builder.RegisterAssemblyTypes(assembly)
+                .Where(t => t.IsAssignableFrom(typeof(Entity)))
+                .AsSelf()
+                .As<Entity>();
+            builder.RegisterAssemblyModules(assembly);
         }
 
         //public virtual void LoadLevel(string levelName)
