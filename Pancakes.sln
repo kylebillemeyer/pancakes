@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Base", "src\Pancakes.Engine.Base\Pancakes.Engine.Base.csproj", "{5841C62B-E3C1-4A16-B979-C6424BDC289A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Physics", "src\Pancakes.Engine.Physics\Pancakes.Engine.Physics.csproj", "{25535DC1-170E-4143-8DD7-F2B62104DE73}"
@@ -11,9 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Rendering",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pancakes.Engine.Core", "src\Pancakes.Engine.Core\Pancakes.Engine.Core.csproj", "{DEE426EB-8E97-40F3-9D5A-9BC3F573761D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balloons", "Balloons\OrneryBirdz\Balloons.csproj", "{9DE7E761-19CA-4188-84D6-2393264296C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balloons.V1", "Balloons.V1\Balloons.V1\Balloons.V1.csproj", "{9DE7E761-19CA-4188-84D6-2393264296C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalloonsContent", "Balloons\OrneryBirdzContent\BalloonsContent.contentproj", "{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalloonsContent", "Balloons.V1\BalloonsContent\BalloonsContent.contentproj", "{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

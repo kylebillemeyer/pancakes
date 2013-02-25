@@ -12,7 +12,8 @@ namespace Pancakes.Engine.Rendering
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<RenderManager>().AsSelf().As(typeof(IEngineManager<>)).SingleInstance();
+            builder.RegisterType<RenderManager>()
+                .AsSelf().As<IEngineComponent>().SingleInstance();
         }
     }
 }

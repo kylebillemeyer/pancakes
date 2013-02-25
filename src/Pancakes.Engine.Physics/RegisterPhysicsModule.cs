@@ -12,7 +12,9 @@ namespace Pancakes.Engine.Physics
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<PhysicsManager>().AsSelf().As(typeof(IEngineManager<>)).SingleInstance();
+            var physicsManager = new PhysicsManager();
+            builder.RegisterInstance(physicsManager).AsSelf().As<IEngineComponent>();
+            builder.RegisterInstance(physicsManager.World).AsSelf();
         }
     }
 }

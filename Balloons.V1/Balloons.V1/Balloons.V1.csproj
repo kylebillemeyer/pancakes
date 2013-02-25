@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Balloons</RootNamespace>
-    <AssemblyName>Balloons</AssemblyName>
+    <RootNamespace>Balloons.V1</RootNamespace>
+    <AssemblyName>Balloons.V1</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
@@ -66,9 +66,8 @@
     <Reference Include="Autofac.Configuration">
       <HintPath>..\..\packages\Autofac.3.0.1\lib\net40\Autofac.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="FarseerPhysicsXNAWP7, Version=3.3.1.37294, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\FarseerPhysicsXNAWP7.3.3.1.37294\lib\net40-Client\FarseerPhysicsXNAWP7.dll</HintPath>
+    <Reference Include="FarseerPhysicsXNA">
+      <HintPath>..\..\lib\FarseerPhysicsXNA.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
@@ -112,11 +111,6 @@
     <ProjectReference Include="..\..\src\Pancakes.Engine.Rendering\Pancakes.Engine.Rendering.csproj">
       <Project>{d42030d3-f5ba-4790-ad76-08cbc80ec64f}</Project>
       <Name>Pancakes.Engine.Rendering</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\OrneryBirdzContent\BalloonsContent.contentproj">
-      <Name>BalloonsContent %28Content%29</Name>
-      <XnaReferenceType>Content</XnaReferenceType>
-      <Project>{200CE08A-C1B7-493D-9A1A-1C14C5733FDF}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

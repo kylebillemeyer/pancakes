@@ -70,7 +70,7 @@
     <Compile Include="Caching\IResourceCache.cs" />
     <Compile Include="Caching\IResourceProvider.cs" />
     <Compile Include="Camera.cs" />
-    <Compile Include="Configuration\IStartUp.cs" />
+    <Compile Include="Bootstrap\IStartUp.cs" />
     <Compile Include="Entity.cs">
       <SubType>Code</SubType>
     </Compile>

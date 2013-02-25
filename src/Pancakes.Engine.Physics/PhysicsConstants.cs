@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Microsoft.Xna.Framework;
 using FarseerPhysics.Dynamics;
+using Microsoft.Xna.Framework;
 
 namespace Pancakes.Engine.Physics
 {
@@ -14,9 +14,9 @@ namespace Pancakes.Engine.Physics
 
         public static float PixelsPerMeter = 64f;
 
-        public static int MetersToPixels(float meters)
+        public static float MetersToPixels(float meters)
         {
-            return (int)(meters * PixelsPerMeter);
+            return meters * PixelsPerMeter;
         }
 
         public static Vector2 MetersToPixels(Vector2 meters)

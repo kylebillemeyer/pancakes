@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using Pancakes.Engine.Extensibility;
 
 namespace Pancakes.Engine
 {
@@ -19,6 +20,7 @@ namespace Pancakes.Engine
         private SpriteBatch spriteBatch;
         private ContainerBuilder builder;
         private IContainer container;
+        private IEnumerable<IEngineComponent> components;
 
         public PancakesGame(int width, int height)
             : base()
@@ -44,6 +46,8 @@ namespace Pancakes.Engine
 
             LoadCustomContent(container);
 
+            components = container.Resolve<IEnumerable<IEngineComponent>>();
+
             Init(container);
         }
 
@@ -68,14 +72,19 @@ namespace Pancakes.Engine
         {
             base.Update(gameTime);
 
-            OnUpdate(gameTime);
+            components.ForEach(x => x.Reset());
+            components.ForEach(x => x.Update(gameTime));
+
+            OnUpdate(container, gameTime);
         }
 
         protected sealed override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);
 
-            OnDraw(gameTime, spriteBatch);
+            components.ForEach(x => x.Draw(spriteBatch, camera));
+
+            OnDraw(container, gameTime, spriteBatch);
         }
 
         protected virtual void Init(IContainer container) 
@@ -86,17 +95,17 @@ namespace Pancakes.Engine
         { 
         }
 
-        protected virtual void OnUpdate(GameTime gameTime)
+        protected virtual void OnUpdate(IContainer container, GameTime gameTime)
         {
         }
 
-        protected virtual void OnDraw(GameTime gameTime, SpriteBatch spriteBatch)
+        protected virtual void OnDraw(IContainer container, GameTime gameTime, SpriteBatch spriteBatch)
         {
         }
 
         private void RegisterEngineParts(ContainerBuilder builder)
         {
-            var executingAssembly = Assembly.GetExecutingAssembly();
+            var executingAssembly = Assembly.GetEntryAssembly();
             RegisterAssembly(builder, executingAssembly);
 
             var loadedAssemblies = executingAssembly.GetReferencedAssemblies();
@@ -110,7 +119,7 @@ namespace Pancakes.Engine
         private void RegisterAssembly(ContainerBuilder builder, Assembly assembly)
         {
             builder.RegisterAssemblyTypes(assembly)
-                .Where(t => t.IsAssignableFrom(typeof(Entity)))
+                .Where(t => t.IsAssignableTo<Entity>())
                 .AsSelf()
                 .As<Entity>();
             builder.RegisterAssemblyModules(assembly);

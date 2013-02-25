@@ -52,8 +52,8 @@
     <Reference Include="DebugViewXNA">
       <HintPath>..\..\lib\DebugViewXNA.dll</HintPath>
     </Reference>
-    <Reference Include="FarseerPhysicsXNAWP7">
-      <HintPath>..\..\packages\FarseerPhysicsXNAWP7.3.3.1.37294\lib\net40-Client\FarseerPhysicsXNAWP7.dll</HintPath>
+    <Reference Include="FarseerPhysicsXNA">
+      <HintPath>..\..\lib\FarseerPhysicsXNA.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />

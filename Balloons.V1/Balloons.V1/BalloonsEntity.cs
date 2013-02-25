@@ -1,12 +1,12 @@
-﻿using FarseerPhysics.Dynamics;
-using Microsoft.Xna.Framework;
-using Pancakes.Engine;
+﻿using Pancakes.Engine;
 using Pancakes.Engine.Physics;
 using Pancakes.Engine.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using FarseerPhysics.Dynamics;
+using Microsoft.Xna.Framework;
 
 namespace OrneryBirdz
 {
@@ -22,6 +22,8 @@ namespace OrneryBirdz
         public Body Body { get; set; }
 
         public bool Dead { get; set; }
+
+        public Vector2 Size { get; set; }
 
         private Vector2 position;
         public virtual Vector2 Position
